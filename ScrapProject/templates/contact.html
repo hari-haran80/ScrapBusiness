@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+</head>
+<body>
+    {% include "nav.html" %}
+    <div class="Main-container">
+        <div class="contact-form-container">
+            <div class="content-div">
+                <div class="Address-div">
+                    <h2>Our Office</h2>
+                    <address>
+                        <p><strong>Address:</strong> Opposite to Pottal Kali amman, Elumalai, Tamil Nadu</p>
+                        <p><strong>Phone:</strong> (+91) 73958 27921</p>
+                        <p><strong>Email:</strong> hariharan.a69@gmail.com</p>
+                    </address>
+                    <iframe class="Iframe" src="https://www.google.com/maps/embed?pb=!1m16!1m11!1m3!1d522.1793899584668!2d77.70621334331622!3d9.867422670524808!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2sin!4v1729523417428!5m2!1sen!2sin" width="95%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <form action="" class="Contact-form" data-aos="fade-right" data-aos-delay="50">
+                    <img src="{% static 'images/customer service woman.png' %}" alt="contact us" class="contact-image">
+                    <h2 data-aos="zoom-in-up">Contact us</h2>
+                    <div class="Names-div">
+                        <div class="Fname-div icon-common" data-aos="fade-right" data-aos-delay="200">
+                            <label for="fname">First Name:</label>
+                            <i class="fa-regular input-icons fa-user"></i>
+                            <input type="text" class="common-contact-input" id="fname" name="fname" placeholder="First Name" />
+                        </div>
+                        <div class="Lname-div" data-aos="fade-right" data-aos-delay="250">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="common-contact-input" id="lname" name="lname" placeholder="Lirst Name" />
+                        </div>
+                    </div>
+                    <div class="Email-div icon-common" data-aos="zoom-in-up" data-aos-delay="350">
+                        <label for="email">Email:</label>
+                        <i class="fa-regular input-icons fa-envelope-open"></i>
+                        <input type="email" class="common-contact-input" id="email" name="email" placeholder="Enter Your Email" />
+                    </div>
+                    <div class="Message-div icon-common" data-aos="zoom-in-up" data-aos-delay="450">
+                        <label for="message">Message:</label>
+                        <i class="fa-solid input-icons fa-inbox"></i>
+                        <textarea id="message" class="common-contact-input" name="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="submit-div" data-aos="zoom-in-up" data-aos-delay="400">
+                        <button type="submit" class="Send-btn">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+        });
+    </script>
+</body>
+</html>

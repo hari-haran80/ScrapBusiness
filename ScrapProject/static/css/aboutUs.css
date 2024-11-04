@@ -1,0 +1,190 @@
+/* .content{
+    background: linear-gradient(180deg, #2E3B3A, #4A7B6C);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+} */
+.AboutMainContainer{
+   background: linear-gradient(135deg, #356155, #333549);
+   width: 100%;
+}
+.AboutSubContainer{
+   
+}
+.AboutContainer1{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 100%;
+   min-height: 100vh;
+   /* background-color: rebeccapurple; */
+}
+.AboutImageDiv{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 49%;
+   /* background-color: red; */
+}
+.ScrapImage{
+   min-width: 35%;
+   height: 70vh;
+   margin-top: 5vh;
+   box-shadow: 0px 8px 20px rgb(0, 0, 0);
+   border-radius: 5px;
+}
+.AboutContentDiv{
+   width: 49%;
+   padding: 25px;
+   position: relative;
+   /* background-color: aquamarine; */
+}
+.AboutContentDiv h1::before {
+   content: "";
+   width: 20px;
+   height: 3px;
+   top: 40px;
+   background-color: rgb(255, 0, 0);
+   position: absolute;
+   left: 0;
+   animation: move 3s infinite ease-in-out;
+}
+@keyframes move {
+   0% {
+     left: 0;
+   }
+   50%{
+      left: 87%;
+   }
+   100% {
+     left: 0;
+   }
+}
+
+.AboutContentDiv h1{
+   color: rgb(255, 0, 119);
+   border-bottom: 3px solid aqua;
+   width: fit-content;
+   position: relative;
+   margin-top: 15vh;
+}
+.AboutContentDiv ul{
+   color: whitesmoke;
+   text-align: justify;
+   list-style-type: none;
+}
+.CompanyName{
+   color: rgb(0, 255, 55);
+   font-weight: 900;
+}
+.AboutContentDiv ul li{
+   margin-top: 25px;
+   /* background-color: red; */
+   width: 95%;
+}
+.Container2{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.MissionDiv{
+   width: 400px;
+   min-height: 450px;
+   padding: 2rem;
+   margin-top: 15px;
+   border-radius: 5px;
+   transition: all 0.5s ease-in-out;
+   background: linear-gradient(180deg, #2E3B3A, #4A7B6C);
+   box-shadow: 0px 8px 20px rgb(0, 0, 0);
+}
+.OurMission,
+.OurVision{
+   transition: all 0.3s ease-in-out;
+   margin-top: 30px;
+   color: whitesmoke;
+}
+.OurVision:hover,
+.OurMission:hover{
+   /* transform: scale(1.1); */
+   margin-top: -30px;
+}
+.MissionDiv h1{
+   position: relative;
+   border-bottom: 3px solid aqua;
+   color: rgb(255, 0, 119);
+   width: fit-content;
+}
+.MissionDiv h1::before {
+   content: "";
+   width: 20px;
+   height: 3px;
+   top: 40px;
+   background-color: rgb(255, 0, 0);
+   position: absolute;
+   left: 0;
+   animation: move 3s infinite ease-in-out;
+}
+.MissionDiv p{
+   margin-top: 25px;
+   text-align: justify;
+   line-height: 1.5;
+}
+@media screen and (max-width:901px){
+   .MissionDiv{
+      width: 320px;
+   }
+}
+@media screen and (max-width:770px){
+   .AboutContentDiv ul{
+       font-size: 14px;
+   }
+}
+@media screen and (max-width:651px){
+   .Container2{
+      display: block;
+   }
+   .OurMission,
+   .OurVision{
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 95%;
+   }
+   .MissionDiv{
+      height: max-content;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+@media screen and (max-width:641px){
+   .AboutContainer1{
+       display: block;
+   }
+   .AboutImageDiv{
+       width: 60%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .ScrapImage{
+       margin-top: 15vh;
+       height: 80vh;
+   }
+   .AboutContentDiv{
+       margin-left: auto;
+       margin-right: auto;
+       width: 95%;
+   }
+}
+@media screen and (max-width:426px){
+   .AboutImageDiv{
+      width: 95%;
+   }
+}
+@media screen and (max-width:376px){
+   .MissionDiv p{
+      font-size: 14px;
+   }
+}
+

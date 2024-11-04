@@ -1,0 +1,136 @@
+.NavContainer{
+    position: fixed;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid aqua;
+    transition: all 0.5s ease-in-out;
+    z-index: 100;
+}
+.LogoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+.CompanyLogo{
+    width: 130px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid aqua;
+}
+.blackScreen{
+    display: none;
+}
+.fa-times{
+    transition: 0.5s ease-in-out;
+    font-size: 40px;
+}
+.fa-bars-staggered{
+    font-size: 40px;
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+.Navigation{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.NavUl{
+    width: 100%;
+    height: 100%;
+    list-style-type:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.NavLi{
+    height: 40px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.NavLi:hover{
+    border-bottom: 3px solid aqua;    
+}
+.NavLink{
+    padding: 10px 20px;
+    font-size: 14px;
+    padding: auto;
+    color: whitesmoke;
+    font-weight: 800;
+    text-decoration: none;
+}
+@media screen and (max-width: 1024px){
+    .LogoDiv{
+        width: fit-content;
+    }
+    .Navigation{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 861px){
+    .NavUl{
+        justify-content: space-evenly;
+        gap: 7px;
+    }
+}
+@media screen and (max-width: 808px){
+    .NavContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fa-bars-staggered{
+        display: block;
+    }
+    .LogoDiv{
+        position: relative;
+    }
+    .blackScreen{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.7);
+        top: 14vh;
+        display: flex;
+        width: 100%;
+        height: 85vh;
+        left: -100%;
+        transition: left 0.3s ease-in-out;
+    }
+    .LogoDiv{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .Navigation{
+        position: absolute;
+        border-right: 2px solid aqua;
+        background-color: black;
+        left: 0;
+        top: 15vh;
+        border-bottom-right-radius: 50px;
+        height: 85vh;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.6s ease-in-out;
+        left: -100%;
+    }
+    .NavUl{
+        width: 200px;
+        display: block;
+    }
+    .NavLi{
+        margin-top: 2rem;
+    }
+}

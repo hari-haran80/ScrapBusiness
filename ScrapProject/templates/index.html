@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/css/universal.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        .sample{
+            height: 1000px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="MainContainer">
+        <div class="SubContainer">
+            <div class="SliderDiv">
+                <div class="arrows">
+                    <i class="fa-solid fa-angle-left" id="previous"></i>
+                    <i class="fa-solid fa-chevron-right" id="next"></i>
+                </div>
+                <div class="sliderImg Active">
+                    <div class="ContentDiv"  >
+                       <h2>Welcome to</h2>
+                       <h1>Scrap Buyers</h1>
+                       <p>Offering convenient scrap collection within a 10 km radius of Elumalai, we are a premier buyer known for our capacity to handle all types of disposable goods, unserviceable items, and outdated scrap</p> 
+                        <a href="./contact.html" class="COntactLink">Contact Us</a>
+                    </div>
+                    <img class="ScrapImages" src="../static/images/plastics.png" alt="Plastics">
+                </div>
+                <div class="sliderImg">
+                    <div class="ContentDiv"  >
+                        <h2>We Pay</h2>
+                        <h1>Highest and Good Rates</h1>
+                        <p>Simplify your scrap disposal with our efficient collection services. We pride ourselves on being a leading buyer who helps you recycle waste into meaningful opportunities.</p> 
+                        <a href="./contact.html" class="COntactLink">Contact Us</a>
+                    </div>
+                    <img class="ScrapImages" src="../static/images/metals.png" alt="Metals">
+                </div>
+                <div class="sliderImg">
+                    <div class="ContentDiv"  >
+                        <h2>Sale Your</h2>
+                        <h1>Waste Scrap</h1>
+                        <p>We offer seamless scrap collection from your premises. As a leading buyer with the capacity to handle large volumes, we transform your unwanted materials into valuable resources</p> 
+                         <a href="./contact.html" class="COntactLink">Contact Us</a>
+                     </div>
+                    <img class="ScrapImages" src="../static/images/bottles.png" alt="Bottles">
+                </div>
+            </div>
+        </div>
+        <div class="sample">
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../static/Js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+.contact-form-container{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #356155, #333549);
+    color: whitesmoke;
+}
+.Main-container{
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(135deg, #356155, #333549);
+
+}
+.Address-div{
+    width: 45%;
+    margin-top: 10vh;
+}
+.Iframe{
+    margin-top: 25px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto  ;
+}
+.Address-div h2{
+    border-left: 3px solid white;
+    padding: 5px 20px;
+}
+.Address-div address{
+    padding: 5px 20px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.Address-div address p{
+    margin-top: 10px;
+}
+.content-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Contact-form{
+    width: 45%;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid darkorchid;
+    padding: 1.5rem;
+    position: relative;
+}
+.contact-image{
+    width: 30px;
+    height: 30px;
+    top: 2rem;
+    left: 4rem;
+    font-size: 1.5rem;
+    position: absolute;
+}
+.Contact-form h2{
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1px solid darkorchid;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.Names-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.Fname-div,
+.Lname-div{
+    position: relative;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+.Email-div,
+.Message-div,
+.submit-div{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.common-contact-input{
+    background: linear-gradient(135deg, #356155, #333549);
+    color: whitesmoke;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid darkorchid;
+    margin-top: 15px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    padding: 7px 35px;
+}
+.common-contact-input:focus, .common-contact-input:hover{
+    outline: none;
+    border-bottom: 1px solid aqua;
+}
+.submit-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Send-btn{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #03DAC6 ;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-weight: 700;
+}
+.Send-btn:hover{
+    background:#018786;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.icon-common:hover .input-icons {
+    color: aqua;
+}
+.icon-common:focus-within .input-icons {
+    color: aqua;
+}
+.input-icons{
+    position: absolute;
+    top: 2.1rem;
+    padding: 5px;
+    left: 0.3rem;
+    border-right: 1px solid darkorchid;
+}
+.fa-inbox{
+    margin-top: 10px;
+}
+@media screen and (max-width:768px){
+    .content-div{
+        display: block;
+        margin-top: 13vh;
+    }
+    .Address-div{
+        width: 100%;
+    }
+    .Contact-form{
+        margin-top: 2rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 354px){
+    .contact-image{
+        left: 2rem;
+    }
+    .socialMedia-div{
+        width: 100%;
+    }
+}

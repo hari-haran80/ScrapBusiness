@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <title>Document</title>
+    <style>
+        .active{
+            border-bottom: 3px solid aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="NavContainer">
+        <div class="LogoDiv">
+            <div class="blackScreen"></div>
+            <img src="../static/images/Company Logo.jpg" alt="Logo" class="CompanyLogo">
+            <i class="fa-solid fa-bars-staggered" id="menu-icon" style="color: #ffffff;"></i>
+        </div>
+        <nav class="Navigation">
+            <ul class="NavUl">
+                <li class="NavLi"><a href="/Home" class="NavLink">Home</a></li>
+                <li class="NavLi"><a href="/Service" class="NavLink">Service</a></li>
+                <li class="NavLi"><a href="/Galary" class="NavLink">Galary</a></li>
+                <li class="NavLi"><a href="/Contact" class="NavLink">Contact Us</a></li>
+                <li class="NavLi"><a href="/About-Us" class="NavLink">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+<script src="{% static 'Js/nav.js' %}"></script>
+<script>
+// Managing Active Status for Navigation Bar
+
+const activePage = window.location.pathname;
+let isActivePageFound = false;
+
+document.querySelectorAll('.NavLink').forEach(link => {
+    if (link.pathname === activePage) {
+        link.parentElement.classList.add('active');
+        isActivePageFound = true;
+    }
+});
+
+if (!isActivePageFound) {
+    document.querySelector('a[href="/Home"]').parentElement.classList.add('active');
+}
+
+
+</script>
+</html>

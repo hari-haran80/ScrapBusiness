@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/Footer.css">
+    <link rel="stylesheet" href="../static/css/universal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+</head>
+<body>
+    <nav>
+        <div class="navdiv">
+            <ul>
+                <li>
+
+                    <button id="Contact">Contact</button>
+                </li>
+                <li>
+                    <button id="Aboutus">About-us</button>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="div">
+        <iframe src="../templates/aboutUs.html" frameborder="0" id="iframe"></iframe>
+    </div>    
+</body>
+<script>
+    const Iframe = document.getElementById('iframe');
+    const ContactLink = document.getElementById('Contact');
+    const AboutLink = document.getElementById('Aboutus');
+
+    ContactLink.addEventListener('click', ()=>{
+        Iframe.src = '../templates/contact.html'
+    })
+
+    AboutLink.addEventListener('click', ()=>{
+        Iframe.src = '../templates/aboutUs.html'
+    })
+</script>
+</html>

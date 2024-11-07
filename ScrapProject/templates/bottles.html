@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/metals.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metals</title>
+    <style>
+        .ContentDiv p{
+            line-height: 1.8rem;
+        }
+    </style>
+</head>
+<body>
+    {% include 'cursor.html' %}
+    <div class="MetalMainDiv">
+        <div class="SubMetalDiv">
+            <div class="ContentDiv">
+                <div class="space"></div>
+                <h1>Bottle Scrap :</h1>
+                <p>We offer a comprehensive range of high-quality glass scrap from beer, wine, and alcohol bottles, providing an eco-friendly solution for industries committed to sustainability. Our glass scrap is meticulously sorted, cleaned, and prepared to meet the needs of recycling and manufacturing processes. Ideal for glass reprocessing, raw material sourcing, and environmental initiatives, our glass bottle scrap collection helps minimize waste and supports a circular economy. Partner with us to make a positive environmental impact through responsible glass scrap sourcing and recycling</p>    
+            </div>
+            <div class="ListMainDiv">
+                <div class="ImageDiv">
+                    <img src="{% static 'images/bottle.webp' %}" class="ScrapImage" alt="Plastic Scrap">
+                </div>
+                <div class="ListDiv">
+                    <h2>Scraps Include :</h2>
+                    <h3>We Accept the Following Scrap :</h3>
+                    <ul>
+                        <li>Beer Bottles</li>
+                        <li>Alcohol Bottles</li>
+                        <li>Wine Bottles</li>
+                        <li>Cool Drinks Bottles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

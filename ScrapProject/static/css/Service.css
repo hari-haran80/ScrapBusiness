@@ -1,0 +1,74 @@
+.ServiceMain{
+    width: 100%;
+    min-height: 100vh;    
+    display: flex;
+    background: linear-gradient(135deg, #356155, #333549);
+    align-items: center;
+    justify-content: center;
+}
+.SideNavDiv{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SideNavDiv ul{
+    list-style-type: none;
+    width: 250px;
+}
+.SideNavDiv ul li{
+    position: relative;
+}
+.buttons{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    cursor:pointer;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+.buttons:hover + .rightarrow {
+    color: #000000;
+}
+.buttons:hover{
+    background: linear-gradient(to right, #bafe7b,#04bef2);
+}
+.rightarrow{
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+    top: 50%;
+    font-weight: 900;
+    transform: translate(-35px,-5px);
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: grey;
+}
+.IframeDiv{
+    width: 70%;
+    height: 100vh;
+    overflow: hidden;
+}
+.Iframe{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:700px){
+    .ServiceMain{
+        display: block;
+    }
+    .IframeDiv{
+        width: 100%;
+    }
+    .SideNavDiv{
+        width: 100%;
+        height: 60vh;
+    }
+    .SideNavDiv ul{
+        margin-top: 70px ;
+    }
+}

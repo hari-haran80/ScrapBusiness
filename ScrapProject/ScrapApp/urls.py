@@ -9,4 +9,8 @@ urlpatterns = [
     path('About-Us', views.AboutUs, name = "About-Us"),
     path('Galary', views.Galary, name = "Galary"),
     path('Service', views.Service, name = "Service"),
+    path('Metals', views.Metals, name = "Metals"),
+    path('Plastic', views.Plastic ,name = 'Plastic'),
+    path('Papper', views.Papper ,name = 'Papper'),
+    path('Bottles', views.Bottles ,name = 'Bottles'),
 ]

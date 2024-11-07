@@ -1,0 +1,39 @@
+*{
+    cursor: none;
+}
+.cursor-dot{
+    width: 8px;
+    height: 8px;
+    background-color: yellow;
+    z-index: 200 !important;
+}
+.cursor-outline{
+    z-index: 200 !important;
+    width: 30px;
+    height: 30px;
+    border: 3px solid yellowgreen;
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+.activeCursor{
+    width: 20px;
+    height: 20px;
+    transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width : 500px){
+    *{
+        cursor: auto;
+    }
+    .cursor-dot,
+    .cursor-outline{
+        display: none;
+    }
+}

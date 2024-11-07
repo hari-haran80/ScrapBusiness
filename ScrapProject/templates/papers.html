@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/metals.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metals</title>
+    <style>
+        .ContentDiv p{
+            line-height: 2rem;
+        }
+        .ImageDiv{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    {% include 'cursor.html' %}
+    <div class="MetalMainDiv">
+        <div class="SubMetalDiv">
+            <div class="ContentDiv">
+                <div class="space"></div>
+                <h1>Papper Scrap :</h1>
+                <p>We carefully collect and sort various types of paper scrap, including office papers, notebooks, textbooks, and more, ensuring that each piece meets quality standards for recycling and repurposing. By choosing our paper scrap solutions, businesses and individuals contribute to reducing landfill waste and conserving natural resources.</p>    
+            </div>
+            <div class="ListMainDiv">
+                <div class="ImageDiv">
+                    <img src="{% static 'images/book scrap.webp' %}" class="ScrapImage" alt="Plastic Scrap">
+                </div>
+                <div class="ListDiv">
+                    <h2>Scraps Include :</h2>
+                    <h3>We Accept the Following Scrap :</h3>
+                    <ul>
+                        <li>News Pappers</li>
+                        <li>Exam Pappers</li>
+                        <li>Note</li>
+                        <li>Books</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

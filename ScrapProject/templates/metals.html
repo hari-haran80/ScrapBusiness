@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/metals.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metals</title>
+</head>
+<body>
+    {% include 'cursor.html' %}
+    <div class="MetalMainDiv">
+        <div class="SubMetalDiv">
+            <div class="ContentDiv">
+                <div class="space"></div>
+                <h1>Metal Scrap :</h1>
+                <p>Metal scrap refers to discarded metal materials that hold value because they can be recycled and reused. This category includes a range of metals:</p>
+                <ul>
+                    <li><strong>Ferrous Metals: </strong>Iron, steel, and cast iron, known for their strength and magnetic properties, are commonly used in construction and manufacturing.</li>
+                    <li><strong>Non-Ferrous Metals: </strong>Metals like aluminum, copper, brass, and lead, which do not rust and are lighter, making them ideal for various industrial applications.</li>
+                </ul>
+            </div>
+            <div class="ListMainDiv">
+                <div class="ImageDiv">
+                    <img src="{% static 'images/metal waste.png' %}" class="ScrapImage" alt="Metal Scrap">
+                </div>
+                <div class="ListDiv">
+                    <h2>Scraps Include :</h2>
+                    <h3>We Accept the Following Scrap :</h3>
+                    <ul>
+                        <li>Aluminim</li>
+                        <li>Copper</li>
+                        <li>Iron</li>
+                        <li>Tin</li>
+                        <li>Steel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

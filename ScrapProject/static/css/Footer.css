@@ -1,0 +1,25 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+nav{
+    width: 20%;
+    background-color: red;
+    display: block;
+}
+.navdiv{
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.div{
+    width: 80%;
+    background-color: yellow;
+    height: 100vh;
+}
+#iframe{
+    width: 100%;
+    height: 100%;
+}

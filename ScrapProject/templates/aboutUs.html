@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/universal.css">
+    {% load static %}
+    <meta charset="UTF-8">    
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aboutUs.css' %}">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../static/css/aboutUs.css">    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
@@ -15,7 +16,7 @@
         <div class="AboutSubContainer">
             <div class="AboutContainer1">
                 <div class="AboutImageDiv">
-                    <img src="../static/images/scrap.webp" class="ScrapImage" alt="Scrap image" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="{% static 'images/scrap.webp' %}" class="ScrapImage" alt="Scrap image" data-aos="fade-up" data-aos-duration="1000">
                 </div>
                 <div class="AboutContentDiv">
                     <h1 data-aos="zoom-in-up" data-aos-duration="500">About Us</h1>
@@ -47,10 +48,31 @@
                 </div>
             </div>
             <div class="Container3">
-
+                <div class="DataAosDiv" data-aos="fade-down" data-aos-duration="500">
+                    <div class="Numberdiv1 numberDiv">
+                        <img src="{% static 'images/Happy Emoji.png' %}" class="clients" alt="Happy Customer">
+                        <p id="number1" class="Numbers">0</p>
+                        <p class="para3">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="DataAosDiv" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="Numberdiv2 numberDiv" >
+                        <img src="{% static 'images/Recycle Sign.png' %}" class="clients" alt="Recycle">
+                        <p id="number2" class="Numbers">0</p>
+                        <p class="para3">Tons Recycled</p>
+                    </div>
+                </div>
+                <div class="DataAosDiv" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="Numberdiv3 numberDiv" >
+                        <img src="{% static 'images/Buy.png' %}" class="clients" alt="Store">
+                        <p id="number3" class="Numbers">0</p>
+                        <p class="para3">We Buy</p>
+                    </div>
+                </div>
             </div>            
         </div>
     </div>
+    <script src="{% static 'Js/aboutUs.js' %}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

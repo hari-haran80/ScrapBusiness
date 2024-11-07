@@ -1,13 +1,6 @@
-/* .content{
-    background: linear-gradient(180deg, #2E3B3A, #4A7B6C);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-} */
 .AboutMainContainer{
    background: linear-gradient(135deg, #356155, #333549);
    width: 100%;
-}
-.AboutSubContainer{
-   
 }
 .AboutContainer1{
    display: flex;
@@ -15,14 +8,12 @@
    justify-content: space-evenly;
    width: 100%;
    min-height: 100vh;
-   /* background-color: rebeccapurple; */
 }
 .AboutImageDiv{
    display: flex;
    align-items: center;
    justify-content: center;
    width: 49%;
-   /* background-color: red; */
 }
 .ScrapImage{
    min-width: 35%;
@@ -33,9 +24,10 @@
 }
 .AboutContentDiv{
    width: 49%;
+   background: linear-gradient(5deg, rgba(51, 53, 73, 0.993), rgb(53, 97, 85));
+   border-radius: 15px;
    padding: 25px;
    position: relative;
-   /* background-color: aquamarine; */
 }
 .AboutContentDiv h1::before {
    content: "";
@@ -51,14 +43,19 @@
    0% {
      left: 0;
    }
+   25%{
+      left: 45%;
+   }
    50%{
       left: 87%;
+   }
+   75%{
+      left: 45%;
    }
    100% {
      left: 0;
    }
 }
-
 .AboutContentDiv h1{
    color: rgb(255, 0, 119);
    border-bottom: 3px solid aqua;
@@ -77,7 +74,6 @@
 }
 .AboutContentDiv ul li{
    margin-top: 25px;
-   /* background-color: red; */
    width: 95%;
 }
 .Container2{
@@ -92,7 +88,7 @@
    width: 400px;
    min-height: 450px;
    padding: 2rem;
-   margin-top: 15px;
+   /* margin-top: 15px; */
    border-radius: 5px;
    transition: all 0.5s ease-in-out;
    background: linear-gradient(180deg, #2E3B3A, #4A7B6C);
@@ -101,12 +97,16 @@
 .OurMission,
 .OurVision{
    transition: all 0.3s ease-in-out;
-   margin-top: 30px;
+   /* margin-top: 30px; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
    color: whitesmoke;
+   /* background-color: red; */
 }
 .OurVision:hover,
 .OurMission:hover{
-   /* transform: scale(1.1); */
    margin-top: -30px;
 }
 .MissionDiv h1{
@@ -130,6 +130,46 @@
    text-align: justify;
    line-height: 1.5;
 }
+
+.Container3{
+   width: 100%;
+   min-height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.numberDiv{
+   background: linear-gradient(180deg, #2E3B3A, #4A7B6C);
+   box-shadow: 0px 8px 20px rgb(0, 0, 0);
+   width: 190px;
+   height: 190px;
+   color: yellow;
+   border-radius: 50%;
+   transition: all 0.3s ease-in-out;
+}
+.numberDiv:hover{
+   margin-top: -30px;
+}
+.clients{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin-left: 50%;
+   transform: translate(-50%);
+   margin-top: 10px;
+}
+.NumberSpan{
+   font-size: 14px;
+}
+.Numbers{
+   font-size: 30px;
+   text-align: center;
+   margin-top: 15px;
+}
+.para3{
+   margin-top: 15px;
+   text-align: center;
+}
 @media screen and (max-width:901px){
    .MissionDiv{
       width: 320px;
@@ -150,6 +190,7 @@
       margin-right: auto;
       display: block;
       width: 95%;
+      height: max-content;
    }
    .MissionDiv{
       height: max-content;
@@ -157,24 +198,46 @@
       margin-left: auto;
       margin-right: auto;
    }
+   .OurVision{
+      margin-top: 60px;
+      margin-bottom: 60px;
+      /* background-color: red; */
+   }
 }
 @media screen and (max-width:641px){
    .AboutContainer1{
-       display: block;
+      display: block;
    }
    .AboutImageDiv{
-       width: 60%;
-       margin-left: auto;
-       margin-right: auto;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .OurMission{
+      margin-top: 30px;
    }
    .ScrapImage{
-       margin-top: 15vh;
-       height: 80vh;
+      margin-top: 15vh;
+      height: 80vh;
    }
    .AboutContentDiv{
-       margin-left: auto;
-       margin-right: auto;
-       width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 95%;
+   }
+}
+@media screen and (max-width:580px){
+   .Container3{
+      margin-bottom: 50px; 
+      display: block;
+   }
+   .Numberdiv2,
+   .Numberdiv3{
+      margin-top: 30px;
+   }
+   .numberDiv{
+      margin-left: auto;
+      margin-right: auto;
    }
 }
 @media screen and (max-width:426px){
@@ -187,4 +250,3 @@
       font-size: 14px;
    }
 }
-

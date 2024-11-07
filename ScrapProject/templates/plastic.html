@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/metals.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metals</title>
+    <style>
+        .ContentDiv p{
+            line-height: 2rem;
+        }
+    </style>
+</head>
+<body>
+    {% include 'cursor.html' %}
+    <div class="MetalMainDiv">
+        <div class="SubMetalDiv">
+            <div class="ContentDiv">
+                <div class="space"></div>
+                <h1>Plastic Scrap :</h1>
+                <p>We specialize in providing high-quality plastic scrap solutions, helping businesses reduce waste, lower costs, and contribute to a greener planet Whether you need raw plastic scrap for recycling, repurposing, or manufacturing, our team ensures prompt delivery and exceptional quality. Join us in driving sustainability through responsible plastic waste management and resource recovery.</p>
+            </div>
+            <div class="ListMainDiv">
+                <div class="ImageDiv">
+                    <img src="{% static 'images/plastic.webp' %}" class="ScrapImage" alt="Plastic Scrap">
+                </div>
+                <div class="ListDiv">
+                    <h2>Scraps Include :</h2>
+                    <h3>We Accept the Following Scrap :</h3>
+                    <ul>
+                        <li>PVC</li>
+                        <li>Chairs</li>
+                        <li>LDPE</li>
+                        <li>PP</li>
+                        <li>PET</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

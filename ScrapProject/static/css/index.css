@@ -4,9 +4,9 @@
     filter: blur(2px);
 }
 .ContentDiv{
-    background-color: rgba(0, 0, 0, 0.473);
+    background: linear-gradient(135deg, rgba(51, 53, 73, 0.8), rgba(53, 97, 85, 0.8));
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     height: fit-content;
     width: 700px;
     padding: 30px;
@@ -39,6 +39,11 @@
     background-color: #BB86FC;
     text-decoration: none;
     color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.COntactLink:hover{
+    background-color: darkviolet;
 }
 .hidden, .sliderImg{
     display: none;
@@ -56,7 +61,7 @@
 }
 #previous, 
 #next{
-    background-color: rgba(0, 0, 0, 0.525);
+    background: linear-gradient(135deg, rgba(51, 53, 73, 0.6), rgba(53, 97, 85, 0.6));
     padding: 5px;
     color: white;
     cursor: pointer;
@@ -71,7 +76,7 @@
 }
 #previous:hover, 
 #next:hover{
-    background-color: black;
+    background: linear-gradient(135deg, rgb(51, 53, 73), rgb(53, 97, 85));
 }
 .Active{
     display: block;
@@ -84,5 +89,22 @@
     100%{
         opacity: 1;
         transition: opacity linear;
+    }
+}
+@media screen and (max-width:702px){
+    .ContentDiv{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-63%);
+    }
+}
+@media screen and (max-width:620px){
+    .ContentDiv p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:426px){
+    .ContentDiv{
+        width: 100%;
     }
 }

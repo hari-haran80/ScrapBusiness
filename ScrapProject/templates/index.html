@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- {% load static %} -->
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../static/css/universal.css">
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
-    <style>
-        .sample{
-            height: 1000px;
-            background-color: red;
-        }
-    </style>
 </head>
 <body>
     {% include 'nav.html' %}
@@ -32,7 +26,7 @@
                        <p>Offering convenient scrap collection within a 10 km radius of Elumalai, we are a premier buyer known for our capacity to handle all types of disposable goods, unserviceable items, and outdated scrap</p> 
                         <a href="./contact.html" class="COntactLink">Contact Us</a>
                     </div>
-                    <img class="ScrapImages" src="../static/images/plastics.png" alt="Plastics">
+                    <img class="ScrapImages" src="{% static 'images/plastics.png' %}" alt="Plastics">
                 </div>
                 <div class="sliderImg">
                     <div class="ContentDiv"  >
@@ -41,7 +35,7 @@
                         <p>Simplify your scrap disposal with our efficient collection services. We pride ourselves on being a leading buyer who helps you recycle waste into meaningful opportunities.</p> 
                         <a href="./contact.html" class="COntactLink">Contact Us</a>
                     </div>
-                    <img class="ScrapImages" src="../static/images/metals.png" alt="Metals">
+                    <img class="ScrapImages" src="{% static 'images/metals.png' %}" alt="Metals">
                 </div>
                 <div class="sliderImg">
                     <div class="ContentDiv"  >
@@ -50,18 +44,123 @@
                         <p>We offer seamless scrap collection from your premises. As a leading buyer with the capacity to handle large volumes, we transform your unwanted materials into valuable resources</p> 
                          <a href="./contact.html" class="COntactLink">Contact Us</a>
                      </div>
-                    <img class="ScrapImages" src="../static/images/bottles.png" alt="Bottles">
+                    <img class="ScrapImages" src="{% static 'images/Alcohol bottles.avif' %}" alt="Bottles">
                 </div>
             </div>
         </div>
-        <div class="sample">
-
+        <div class="ChooseUsDiv">
+            <div class="CompanyContentDiv">
+                <h1 data-aos = "fade-up" data-aos-duration="500">Why Choose Us?</h1>
+                <div class="CompanyDescriptionDiv">
+                    <p data-aos="fade-up-right" data-aos-duration="500"> We have been in this business for the past 30 years. We have go to Digital Marketing,
+                        in last few years we planned to move into the Scrap Dealer from Company's, Industry,
+                        etc.,<br><br>
+                        We have very good experience in scrap material like Aluminium, Iron, Steel, Plastic,
+                        Copper, Brass, Electrical, Motors, Rubber, Nickel, etc., Our price is totally different from
+                        other Company's. Now We are leading scrap buyer, purchaser in the city. We are the
+                        best because we give best price for your old & waste scrap. We buy or purchase all
+                        kind of scrap like : Aluminium Scarp, Battery Scrap, Brass Scrap, Computer Scrap Buyer,
+                        Copper Scrap, Electrical Scrap, Ferrous & Nonferrous Scrap, GI Scrap, Iron Scrap, Iron &
+                        Steel Pipes Scrap, Lead Scrap, Motor Parts Scrap, DG Set, Nickel Scrap, Office Furnitures,
+                        Old Air Condition, Old Machinery, Old Vehicles, Plastic Scrap, Solar Scrap, Stainless Steel,
+                        Tmt Steel Scrap, Wooden Scrap, etc.,</p>
+                        <h1 data-aos = "fade-up" data-aos-duration="500">What we Offer</h1>
+                </div>
+                <div class="CardContentDiv">
+                    <div class="CardDiv1">
+                        <div class="AOS-div" data-aos = "fade-up" data-aos-duration="1000">
+                            <div class="CardsDiv">
+                                <img src="{% static 'images/Weight (2).png' %}" class="CardImage" alt="">
+                                <h3>Accurate Weight</h3>
+                                <p>We use certified calibrated weighing scales that gives complete assurance on accurate weight.</p>
+                            </div>
+                        </div>
+                        <div class="AOS-div" data-aos = "fade-up" data-aos-duration="1500">
+                            <div class="CardsDiv">
+                                <img src="{% static 'images/Money-removebg.png' %}" class="CardImage" alt="">
+                                <h3>Competitive Price</h3>
+                                <p>We offer competitive rates that ensure you receive the maximum return for your materials.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CardDiv2">
+                        <div class="AOS-div" data-aos = "fade-up" data-aos-duration="2000">
+                            <div class="CardsDiv">
+                                <img src="{% static 'images/Customer Service (1).png' %}" class="CardImage" alt="">
+                                <h3>Customer Service</h3>
+                                <p>Our team is committed to providing a smooth and satisfactory experience, from initial contact to final payment. We believe in building long term relationships based on trust and quality service.</p>
+                            </div>
+                        </div>
+                        <div class="AOS-div" data-aos = "fade-up" data-aos-duration="2500">
+                            <div class="CardsDiv">
+                                <img src="{% static 'images/Timing-removebg.png' %}" class="CardImage" alt="">
+                                <h3>Timely Service</h3>
+                                <p>We pride ourselves on offering prompt, dependable service. We understand the importance of efficient scrap removal and timely pick-ups, so you can count on us to be there when you need us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Pick-up-service-div">
+            <div class="pick-up-heading">
+                <h1 data-aos = "fade-up" data-aos-duration="500">SELL YOUR SCRAPS</h1>
+                <h3 data-aos = "fade-up" data-aos-duration="1000">Sell your scrap in 3 easy steps</h3>
+            </div>
+            <div class="servicesDiv">
+                <div class="service-div" data-aos = "fade-up" data-aos-duration="1000">
+                    <img src="{% static 'images/customer support.png' %}" class="ServiceImage" alt="">
+                    <h3>Book Your Service</h3>
+                </div>
+                <i class="fa-solid fa-arrow-right-long  rightArrow"></i>
+                <div class="service-div" data-aos = "fade-up" data-aos-duration="1500">
+                    <img src="{% static 'images/pick up.png' %}" class="ServiceImage" alt="">
+                    <h3>Pickup On the Way</h3>
+                </div>
+                <i class="fa-solid fa-arrow-right-long  rightArrow"></i>
+                <div class="service-div" data-aos = "fade-up" data-aos-duration="2000">
+                    <img src="{% static 'images/Delivery person.png' %}" class="ServiceImage" alt="">
+                    <h3>Pickup Boys Will  arrive at your door steps</h3>
+                </div>
+            </div>
+        </div>
+        <div class="customer-revive-div">
+            <div class="revive-heading">
+                <h1 data-aos = "fade-up" data-aos-duration="1000">What Customer Says:</h1>
+            </div>
+            <div class="review-slider-container">
+                <div class="review-slider" data-aos = "fade-up" data-aos-duration="2000">
+                    <div class="Customer-revive SliderActive">
+                        <p>Excellent service! They were very punctual and provided a fair price for my old appliances. I’m happy with the convenience and the professionalism of the team. Highly recommended</p>
+                        <h3>Rajesh Kumar</h3>
+                    </div>
+                    <div class="Customer-revive ">
+                        <p>I had a lot of scrap metal from a recent renovation. The team arrived on time, took care of everything quickly, and offered a generous payout. Very smooth experience!</p>
+                        <h3>Anita Sharma</h3>
+                    </div>
+                    <div class="Customer-revive ">
+                        <p>I was impressed by how easy the whole process was. I just scheduled a pickup, and they handled the rest. The payment was instant, and their rates were the best I found.</p>
+                        <h3>Sunil Varma</h3>
+                    </div>
+                    <div class="Customer-revive ">
+                        <p>The scrap collection team was friendly and efficient. They arrived as promised and offered a very reasonable price for my scrap items. I’ll definitely use their services again!</p>
+                        <h3>Priya Mehta</h3>
+                    </div>
+                    <div class="dots">
+                
+                    </div>
+                    <div class="BackgroundImag">
+                        <img src="../static/images/doubleQuots.png" class="BgImage" alt="">
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
+    {% include "Footer.html" %}
+</body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="../static/Js/index.js"></script>
-</body>
+    <script src="{% static 'Js/index.js' %}"></script>
 </html>

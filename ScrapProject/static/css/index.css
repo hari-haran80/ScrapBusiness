@@ -91,11 +91,266 @@
         transition: opacity linear;
     }
 }
+.MainContainer{
+    background: linear-gradient(135deg, #356155, #333549);
+}
+.ChooseUsDiv{   
+    width: 100%;
+    min-height: 120vh;
+}
+.CompanyContentDiv{
+    padding: 20px;
+}
+.CompanyContentDiv h1{
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    color: rgb(255,0,119);
+}
+.CompanyDescriptionDiv{
+    margin-top: 15px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.CompanyDescriptionDiv p{
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 15px;
+    color: whitesmoke;
+}
+.CardContentDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.CardDiv1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 400px;
+}
+.CardDiv2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 400px;
+}
+.AOS-div{
+    width: 45%;
+}
+.CardsDiv{
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.CardsDiv:hover{
+    margin-top: -10px;
+}
+.CardsDiv h3{
+    text-align: center;
+    color: rgb(255,0,119);
+    margin-top: 15px;
+    font-weight: 900;
+}
+.CardsDiv p{
+    line-height: 1.1rem;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    font-size: 13px;
+    text-align: justify;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.CardImage{
+    margin-left: 50%;
+    box-shadow: 0px 8px 20px rgb(0, 0, 0);
+    margin-top: 15px;
+    transform: translate(-50%);
+    width: 50%;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 5px;
+}
+.Pick-up-service-div{
+    width: 100%;
+    min-height: 100vh;
+}
+.pick-up-heading{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+}
+.pick-up-heading h1{
+    margin-top: 35px;
+    letter-spacing: 2px;
+    color: rgb(255,0,119);
+}
+.pick-up-heading h3{
+    margin-top: 30px;
+    color: wheat;
+}
+.servicesDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.service-div{
+    width: 25%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightArrow{
+    color: rgb(255,0,119);
+    font-size: 30px;
+    font-weight: 900;
+}
+.service-div h3{
+    color: whitesmoke;
+    margin-top: 15px;
+    text-align: center;
+}
+.service-div:hover > .ServiceImage{
+    margin-top: -30px;
+}
+.ServiceImage{
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+    height: fit-content;
+}
+.customer-revive-div{
+    width: 100%;
+    height: 80vh;
+}
+.revive-heading{
+    width: 100%;
+    color: wheat;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review-slider-container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.review-slider{
+    width: 700px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.BgImage{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -20%;
+    position: absolute;
+    z-index: 0;
+    filter: blur(9px);
+}
+.Customer-revive{
+    z-index: 1;
+    display: none;
+}
+.SliderActive{
+    display: block;
+    animation: fadeAnimation 0.5s;
+}
+@keyframes fadeAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transition: opacity linear;
+    }
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+.activeDot{
+    background-color: whitesmoke;
+}
+.dots{
+    width: 100%;
+    height: 15px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Customer-revive p{
+    text-align: center;
+    line-height: 2rem;
+    color: whitesmoke;
+}                     
+.Customer-revive h3{
+    color: rgb(255,0,119);
+    margin-top: 100px;
+    text-align: center;
+    letter-spacing: 2px;
+}        
+@media screen and (max-width:901px){
+    .CardContentDiv{
+        display: block;
+    }
+    .CardDiv1,
+    .CardDiv2{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:762px){
+    .servicesDiv{
+        display: block;
+    }
+    .service-div{
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .rightArrow{
+        width: 100%;
+        transform: rotate(90deg);
+        text-align: center;
+        margin-top: 50px;
+    }
+}
 @media screen and (max-width:702px){
     .ContentDiv{
         width: 80%;
         left: 50%;
         transform: translateX(-63%);
+    }
+    .review-slider{
+        width: 90%;
+    }
+    .CompanyDescriptionDiv P{
+        font-size: 13px;
     }
 }
 @media screen and (max-width:620px){
@@ -103,8 +358,63 @@
         font-size: 14px;
     }
 }
+@media screen and (max-width:521px){
+    .CardDiv1,
+    .CardDiv2{
+        display: block;
+    }
+    .AOS-div{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .CompanyDescriptionDiv P{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:450px){
+    .service-div{
+        width: 100%;
+    }
+    .review-slider{
+        width: 95%;
+    }
+}
 @media screen and (max-width:426px){
     .ContentDiv{
+        width: 100%;
+    }
+    .CompanyContentDiv h1{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width:393px){
+    .pick-up-heading h1{
+        font-size: 25px;
+    }
+    .pick-up-heading h3{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:376px){
+    .CardDiv1,
+    .CardDiv2{
+        width: 100%;
+    }
+    .AOS-div{
+        width: 90%;
+    }
+}
+@media screen and (max-width:362px){
+    .revive-heading h1{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width:325px){
+    .CompanyDescriptionDiv{
+        width: 100%;
+    }
+    .CompanyDescriptionDiv p{
         width: 100%;
     }
 }

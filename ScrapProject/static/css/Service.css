@@ -31,7 +31,7 @@
     transition: all 0.3s ease-in-out;
     border: none;
 }
-.buttons:hover + .rightarrow {
+.buttons:hover  .rightarrow {
     color: #000000;
 }
 .buttons:hover{
@@ -41,21 +41,27 @@
     position: absolute;
     transition: all 0.3s ease-in-out;
     font-size: 18px;
-    top: 50%;
+    right:1rem;
+    top:10px;
     font-weight: 900;
-    transform: translate(-35px,-5px);
     padding: 5px 10px;
     border-radius: 50%;
     color: grey;
 }
+.Active{
+    background: linear-gradient(to right, #bafe7b,#04bef2);
+}
+.buttons.Active .rightarrow {
+    color:black;
+}
 .IframeDiv{
     width: 70%;
-    height: 100vh;
     overflow: hidden;
+    height: 120vh;
 }
 .Iframe{
     width: 100%;
-    height: 100%;
+    height: 120vh;
 }
 @media screen and (max-width:700px){
     .ServiceMain{

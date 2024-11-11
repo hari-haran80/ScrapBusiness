@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/Footer.css">
-    <link rel="stylesheet" href="../static/css/universal.css">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Footer.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
 </head>
 <body>
-    <nav>
-        <div class="navdiv">
-            <ul>
-                <li>
-
-                    <button id="Contact">Contact</button>
-                </li>
-                <li>
-                    <button id="Aboutus">About-us</button>
-
-                </li>
-            </ul>
+    <footer class="footer">
+        <div class="FooterMainDiv">
+            <div class="divs Firstdiv" data-aos="fade-up" data-aos-duration="1000">
+                <div class="LinksDiv" >
+                    <h1>Quick Links</h1>
+                    <ul>
+                        <li><a href="/About-Us">About-Us</a></li>
+                        <li><a href="/Service">Services</a></li>
+                        <li><a href="/Galary">Galary</a></li>
+                        <li><a href="/Contact">Contact-Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divs" data-aos="fade-up" data-aos-duration="1500">
+                <div class="WorkingHours" >
+                    <h1>Working Hours</h1>
+                    <p><i class="fa-solid fa-calendar-days"></i> Monday - Saturday</p>
+                    <p><i class="fa-solid fa-user-clock"></i> 9.00 AM - 7.00 PM</p>
+                </div>
+            </div>
+            <div class="divs" data-aos="fade-up" data-aos-duration="2000">
+                <address class="FooterAddressDiv" >
+                    <div class="FooterLogoImageDiv" >
+                        <img src="{% static 'images/newLogo.png' %}" class="FooterLogo" alt="Company Logo">
+                    </div>
+                    <p><a href="tel:+917395827921" class="FooterMailLink" target="_blank"><i class="fa-solid fa-phone-volume FooteraddressIcon"></i> <strong>Phone:</strong> (+91) 73958 27921</a></p>
+                    <p><a href="mailto:hariharan.a69@gmail.com" class="FooterMailLink" target="_blank"><i class="fa-solid fa-paper-plane FooteraddressIcon"></i> <strong>Email:</strong> hariharan.a69@gmail.com</p></a>     
+                    <p><a href="https://maps.app.goo.gl/rXkabUSySHVpmd3b6" target="_blank" class="FooterMailLink"><i class="fa-solid fa-location-crosshairs FooteraddressIcon"></i> <strong>Address:</strong> Opposite to Pottal Kali amman, Elumalai, Tamil Nadu </a></p>
+                </address>
+            </div>
         </div>
-    </nav>
-    <div class="div">
-        <iframe src="../templates/aboutUs.html" frameborder="0" id="iframe"></iframe>
-    </div>    
+        <div class="SocialMediaDiv" data-aos="fade-up" data-aos-duration="2000">
+            <h4>Connect With Us:</h4>
+            <div class="MediaIconDiv">
+                <a href="https://www.instagram.com/heart_stoler_hari/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100009078732441" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/hari-haran-8281351a8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <p class="Rights">&COPY All Rights Reservers</p>
+    </footer>
 </body>
-<script>
-    const Iframe = document.getElementById('iframe');
-    const ContactLink = document.getElementById('Contact');
-    const AboutLink = document.getElementById('Aboutus');
-
-    ContactLink.addEventListener('click', ()=>{
-        Iframe.src = '../templates/contact.html'
-    })
-
-    AboutLink.addEventListener('click', ()=>{
-        Iframe.src = '../templates/aboutUs.html'
-    })
-</script>
 </html>

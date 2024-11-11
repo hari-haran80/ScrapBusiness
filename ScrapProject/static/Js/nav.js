@@ -41,18 +41,6 @@ blackScreen.addEventListener('click', () => {
     }
 })
 
-// // Nav Color change when scrolling
-
-// window.addEventListener('scroll', function() {
-//     const navbar = document.querySelector('.NavContainer');
-    
-//     if (window.scrollY > 50) {
-//         navbar.style.background = 'linear-gradient(135deg, #333549, #356155)';
-//     } else {
-//         navbar.style.background = 'linear-gradient(135deg, rgba(51, 53, 73, 0.4), rgba(53, 97, 85, 0.4))';
-//     }
-// });
-
 // Managing Active Status for Navigation Bar
     
 const activePage = window.location.pathname;
@@ -68,3 +56,13 @@ document.querySelectorAll('.NavLink').forEach(link => {
 if (!isActivePageFound) {
     document.querySelector('a[href="/Home"]').parentElement.classList.add('active');
 }
+
+// Smooth Scrolling to the top
+
+document.querySelector('.UpArrow a').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+});

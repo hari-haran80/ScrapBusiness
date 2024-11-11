@@ -11,7 +11,6 @@
     width: 100%;
     height: max-content;
     background: linear-gradient(135deg, #356155, #333549);
-
 }
 .addressIcon{
     padding: 10px;
@@ -62,7 +61,8 @@
     width: 45%;
     margin-top: 30px;
     border-radius: 15px;
-    border: 1px solid darkorchid;
+    background: linear-gradient(180deg, #2E3B3A, #4A7B6C);
+    box-shadow: 0px 8px 20px rgb(0, 0, 0);
     padding: 1.5rem;
     position: relative;
 }
@@ -127,7 +127,7 @@
     background-color: #03DAC6 ;
     width: 300px;
     transition: all 0.3s ease-in-out;
-    color: white;
+    color: white;    box-shadow: 0px 8px 20px rgb(0, 0, 0);
     font-weight: 700;
 }
 .Send-btn:hover{

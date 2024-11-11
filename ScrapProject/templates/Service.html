@@ -5,33 +5,33 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'css/Service.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/universal.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <style>
-        .Active{
-            background: linear-gradient(to right, #bafe7b,#04bef2);
-        }
-        .buttons.Active + .rightarrow {
-            color:black;
-        }
-    </style>
 </head>
 <body>
     {% include "nav.html" %}
     <div class="ServiceMain">
         <div class="SideNavDiv">
             <ul>
-                <li><button class="buttons Active" id="Mettals">Metals</button> <i class="fa-solid fa-angle-right rightarrow"></i></li>
-                <li><button class="buttons" id="Plastic">Plastic</button> <i class="fa-solid fa-angle-right rightarrow"></i></li>
-                <li><button class="buttons" id="Bottles">Bottles</button> <i class="fa-solid fa-angle-right rightarrow"></i></li>
-                <li><button class="buttons" id="Pappers">Pappers</button> <i class="fa-solid fa-angle-right rightarrow"></i></li>
+                <li><button class="buttons Active" id="Mettals" data-aos="fade-up" data-aos-duration="500">Metals <i class="fa-solid fa-angle-right rightarrow"></i> </button></li>
+                <li><button class="buttons" id="Plastic" data-aos="fade-up" data-aos-duration="1000">Plastic <i class="fa-solid fa-angle-right rightarrow"></i> </button></li>
+                <li><button class="buttons" id="Bottles" data-aos="fade-up" data-aos-duration="1500">Bottles <i class="fa-solid fa-angle-right rightarrow"></i> </button></li>
+                <li><button class="buttons" id="Pappers" data-aos="fade-up" data-aos-duration="2000">Pappers <i class="fa-solid fa-angle-right rightarrow"></i> </button></li>
             </ul>
         </div>
         <div class="IframeDiv">
             <iframe src="/Metals" frameborder="0" class="Iframe"></iframe>
         </div>
     </div>
+    {% include "Footer.html" %}
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+        });
+    </script>
 <script src="{% static 'Js/Service.js' %}"></script>
 </html>

@@ -1,0 +1,13 @@
+.MainGalleryDiv{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SubGalleryDiv{
+    width: 100%;
+    height: 100vh;
+    
+}

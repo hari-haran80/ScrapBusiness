@@ -24,7 +24,7 @@ def Contacts(request):
         OwnerEmail = 'hariharan.a6998@gmail.com'
         ContentMessage = request.POST['message']
         send_mail(
-            'New Message from ' + request.POST['fname'] + ' ' + request.POST['lname'],
+            'New Message from Customer - ' + request.POST['fname'],
             ContentMessage,
             settings.EMAIL_HOST_USER,
             [OwnerEmail],
@@ -49,7 +49,7 @@ def AboutUs(request):
     return render (request, 'aboutUs.html')
 
 def Galary(request):
-    return render (request, 'contact.html')
+    return render (request, 'gallery.html')
 
 def Service(request):
     return render (request, 'Service.html')

@@ -66,3 +66,19 @@ document.querySelector('.UpArrow a').addEventListener('click', function (event) 
       behavior: 'smooth'
     });
 });
+
+// Script for Hide Up Arrow when it is in the top
+
+const UpArrow = document.querySelector('.UpArrow');
+
+function ToggleUpArrow(){
+    if (window.scrollY >= 80) {
+        UpArrow.style.display = 'block';
+    } else {
+        UpArrow.style.display = 'none';
+    }
+}
+
+window.addEventListener('scroll', ToggleUpArrow);
+
+ToggleUpArrow();

@@ -136,6 +136,11 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+.Send-btn:disabled{
+    background-color: grey;
+    color: whitesmoke;
+    cursor:not-allowed;
+}
 .icon-common:hover .input-icons {
     color: aqua;
 }

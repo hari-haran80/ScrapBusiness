@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/preloader.css' %}">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Loader</title>
+</head>
+<body>
+    <div class="LoaderDiv">
+        <div class="loaderContentDiv">
+            <img src="{% static 'images/newLogo.png' %}" class="LoaderLogo" alt="Company Logo">
+            <div class="animation"></div>
+        </div>
+    </div>
+    <script src="{% static 'Js/preloader.js' %}"></script>
+</body>
+</html>

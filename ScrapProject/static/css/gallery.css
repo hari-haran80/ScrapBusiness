@@ -1,13 +1,67 @@
 .MainGalleryDiv{
     width: 100%;
-    height: 100vh;
-    background-color: red;
+    min-height: 100vh;
+    /* background-color: red; */
     display: flex;
-    align-items: center;
+    padding: 5px;
+   background: linear-gradient(135deg, #356155, #333549);
+   align-items: center;
     justify-content: center;
 }
 .SubGalleryDiv{
     width: 100%;
-    height: 100vh;
-    
+    min-height: 100vh;
+    padding: 15px;
+}
+.SubGalleryDiv h1{
+    text-align: center;
+    margin-top: 50px;
+    border-left: 5px solid red;
+    margin-bottom: 20px;
+    display: block;
+    background: linear-gradient(to right, #bafe7b,#04bef2);
+    background-clip: text;
+    color: transparent;
+}
+.firstHeading{
+    margin-top: 13vh !important;
+}
+.galleryDiv{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cardsDiv{
+    width: 300px;
+    min-height: 450px;
+    margin-top: 15px;
+    background: linear-gradient(180deg, #2E3B3A, #4A7B6C);
+    box-shadow: 0px 8px 20px rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 15px;
+    /* background-color: aquamarine; */
+}
+.RawScrapImages{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.cardsDiv p{
+    margin-top: 15px;
+    text-align: justify;
+    color: whitesmoke;
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+.cardsDiv h3{
+    width: fit-content;
+    color: transparent;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    background-clip: text;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }

@@ -3,6 +3,8 @@ from .models import Contact
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
 
 def Home(request):
     return render(request, 'index.html')
@@ -32,17 +34,27 @@ def Contacts(request):
         )
         
         email = request.POST['email']
-        message = "Thanks for reaching out! We've received your message and will get back to you shortly"
-        send_mail(
-            'Contact Form Submission',
-            message,
-            settings.EMAIL_HOST_USER,
-            [email],
-            fail_silently=False
-        )
+
+        html_content = render_to_string('EmailTamplate.html', {
+            'email': email,
+            'fname' : request.POST['fname'],
+            'lname' : request.POST['lname'],
+            'message' : request.POST['message']
+        })
+
+        subject = 'Thank You for Contacting Famous Scrap'
+        from_email = settings.EMAIL_HOST_USER
+        to_email = [email]
+
+        email_message = EmailMultiAlternatives(subject, '', from_email, to_email)
+        email_message.attach_alternative(html_content, "text/html")
+        email_message.send()
+
         messages.success(request, "Message has been sent successfully")
 
-    return render(request, 'contact.html', {"contact": contact})
+        return render(request, 'contact.html')
+
+    return render(request, 'contact.html')
 
 
 def AboutUs(request):
@@ -65,3 +77,6 @@ def Papper(request):
     
 def Bottles(request):
     return render (request, 'bottles.html')
+
+def custom_page_not_found(request, exception):
+    return render(request, 'pageNotFound.html', status=404)

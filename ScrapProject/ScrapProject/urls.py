@@ -11,4 +11,4 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.IMAGE_URL, document_root=settings.IMAGE_ROOT)    
     
-# handler404 = 'ScrapApp.views.custom_page_not_found'
+handler404 = 'ScrapApp.views.custom_page_not_found'

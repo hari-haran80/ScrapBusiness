@@ -12,9 +12,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-r7)vn(w526rbk8$2(a1u2fr2&ej-&d8a0-et5k*z!1+d&3lt+^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'hariharan.a69@gmail.com'
@@ -112,12 +112,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
+STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+if DEBUG:
+    STATICFILES_DIRS = [os.path. join(BASE_DIR, 'static') ]
+    
+else:
+    STATIC_ROOT = os.path. join(BASE_DIR, 'static')
 
 IMAGE_URL ='/images/'
 IMAGE_ROOT = os.path.join(BASE_DIR, 'images/')

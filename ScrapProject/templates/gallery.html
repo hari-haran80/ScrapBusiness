@@ -1,29 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../static/css/gallery.css">
-    <link rel="stylesheet" href="../static/css/universal.css">
-    <link rel="shortcut icon" href="../static/images/icon gallery.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+    <link rel="stylesheet" href="{% static 'css/universal.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/icon gallery.png' %}" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
 </head>
 <body>
+    {% include 'nav.html' %}
     <div class="MainGalleryDiv">
         <div class="SubGalleryDiv">
+            <h1 class="firstHeading" data-aos="fade-up" data-aos-duration="500">Metal Scraps</h1>
             <div class="galleryDiv">
-                <h1>Scrap Metals</h1>
-                <div class="cardsDiv">
-
+                <div class="cardsDiv" data-aos="fade-up" data-aos-duration="1000" >
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/aluminium food container.jpg' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Aluminium Container</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500">  Aluminum food containers are lightweight, recyclable packaging materials commonly used for storing and transporting food. They are highly valued in the scrap industry for their reusability and eco-friendly nature</p>                
                 </div>
-            </div>
+                <div class="cardsDiv" data-aos="fade-up" data-aos-duration="1000" >
+                    <img  data-aos="fade-up" data-aos-duration="1500" src="{% static 'images/aluminium Vessels.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Aluminium Vessels</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Aluminum vessels, commonly used in households for cooking and storage, are durable and corrosion-resistant. They hold significant value in the scrap industry due to their recyclability and potential for reuse in various applications</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/copper tube.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Copper Tube</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Copper tubes are widely used in plumbing, refrigeration, and HVAC systems due to their durability and thermal conductivity. They are highly sought after in the scrap industry for their excellent recyclability and high resale value</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/copper wire.jpg' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Copper Wire</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Copper wires are essential in electrical systems for their superior conductivity and flexibility. In the scrap industry, they are highly valuable for recycling, as copper retains its quality and fetches a good price when repurposed</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/iron scrap.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Iron Mix</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Iron scrap is a valuable material sourced from old machinery, construction debris, and industrial byproducts. It is widely recycled in the scrap industry, contributing to the production of new steel and reducing environmental impact</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/ironrod.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Iron Rod</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Iron rods, commonly used in construction for reinforcement, provide strength and stability to concrete structures. In the scrap industry, these rods are recycled to create new materials, reducing waste and promoting sustainable building practices</p>
+                </div>
+            </div><br><hr>
+            <h1 data-aos="fade-up" data-aos-duration="500">Papper scrap</h1>
             <div class="galleryDiv">
-                <h1>Papper scrap</h1>
-                <div class="cardsDiv">
-
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/newspaper-scrap-500x500.jpg' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >News Paper</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Newspapers are a commonly recycled material, often used for packaging and insulation due to their availability and fiber content. In the scrap industry, they are valued for paper recycling, contributing to the production of new paper products and reducing waste</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/old-book-scrap-500x500.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Old Books</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Old books are valuable in the scrap industry for their paper content, which can be recycled into new products. Recycling books helps reduce waste and promotes the sustainable use of resources while preserving the environment.</p>
+                </div>
+            </div><br><hr>
+            <h1 data-aos="fade-up" data-aos-duration="500">Plastic scrap</h1>
+            <div class="galleryDiv">
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/chair scrap.avif' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Plastic Chair</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Plastic chairs, often used in households and public spaces, are durable but eventually wear out over time. In the scrap industry, they are recycled to reduce plastic waste and repurposed into new products, supporting a circular economy</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/pc water bottle scrap.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Pc Water Bottles</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >PC (polycarbonate) water bottles are lightweight, durable containers commonly used for hydration. In the scrap industry, they are valuable for recycling, as polycarbonate can be repurposed into new plastic products, reducing environmental impact</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/pet bottle scrap.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >PET Bottles</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >PET bottles are widely used for packaging beverages and other liquids due to their strength and lightweight nature. In the scrap industry, they are highly recyclable, helping to reduce plastic waste and support the production of new sustainable plastic products.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/plastic-scrap.jpg' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Mix Plastics</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Mixed plastics consist of various types of plastic materials, often discarded together after use. In the scrap industry, they are collected and recycled into new products, helping to reduce plastic waste and promote environmental sustainability</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/product-jpeg.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >Glucose Bottles</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >Glucose bottles, typically made of plastic, are commonly used in medical and food industries for storing liquids. In the scrap industry, these bottles are valuable for recycling, helping to reduce plastic waste and contribute to the creation of new plastic products</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1000"  class="cardsDiv">
+                    <img data-aos="fade-up" data-aos-duration="1500"  src="{% static 'images/pvc-scrap.webp' %}" alt="" class="RawScrapImages">
+                    <h3 data-aos="fade-up" data-aos-duration="2000" >PVC Pipes</h3>
+                    <p data-aos="fade-up" data-aos-duration="2500" >PVC pipes, commonly used in plumbing and construction, are durable and resistant to corrosion. In the scrap industry, they are highly recyclable, contributing to the production of new piping and reducing environmental waste</p>
                 </div>
             </div>
         </div>
     </div>
+    {% include 'Footer.html' %}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

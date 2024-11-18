@@ -167,19 +167,6 @@
     position: relative;
     background: linear-gradient(135deg, #356155, #333549);
 }
-#CloseMessage{
-    right: 2rem;
-    top: 0.4rem;
-    border-radius: 50%;
-    position: absolute;
-    background-color: red;
-    padding: 7px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-#CloseMessage:hover{
-    background-color: darkred;
-}
 
 @media screen and (max-width:768px){
     .content-div{
@@ -203,5 +190,10 @@
     }
     .socialMedia-div{
         width: 100%;
+    }
+}
+@media screen and (max-width:380px){
+    .MessageDiv{
+        font-size: 12px;
     }
 }
